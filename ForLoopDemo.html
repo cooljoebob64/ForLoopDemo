@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>For Loop Demo</title>
+</head>
+<body>
+
+	<!-- page display -->
+	<h1>For Loop Demo</h1>
+	<p>Here come the outputs:</p>
+	<div id="outputs" style="white-space:pre-wrap; "></div>
+
+	<!-- iterator script -->
+	<script type="text/javascript">
+		let start = 0;
+		let max = 99;
+		for (let i=start; i<=max; i++){
+			let oddity = "undetermined";
+			if (i%2>0){
+				oddity = "odd";
+			} else {
+				oddity = "even";}
+			let output = i + " is " + oddity + "\n";
+			document.getElementById("outputs").append(output);
+		}
+	</script>
+
+</body>
+</html>
